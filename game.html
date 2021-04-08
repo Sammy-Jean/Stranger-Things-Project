@@ -1,22 +1,62 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+<html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link type="text/css" rel="stylesheet" href="css/styles.css" />
 
-  <!-- [if lt IE 9]>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="text/css" rel="stylesheet" href="css/styles.css" />
+
+	<meta charset="utf-8">
+
+	<title>Game | Stranger Things</title>
+
+	<link rel="stylesheet" href="https://use.typekit.net/rqq5omh.css">
+
+	<!--[if lt IE 9]>
 			<script src="js/html5shiv-printshiv.min.js"></script>
-		<![endif] -->
-
-  <title>Game | Stranger Things</title>
+		<![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
 
+	<header>
+		<img class="logo" src="images/logo.png" alt="Stranger Things logo">
+		<nav>
+			<ul class="w-image">
+				<li><img class="waffle1" src="images/waffle.png" alt="Waffle" /></li>
+				<li><img class="waffle2" src="images/waffle.png" alt="Waffle" /></li>
+				<li><img class="waffle3" src="images/waffle.png" alt="Waffle" /></li>
+			</ul>
 
-<script src="js/scripts"></script>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="characters.html">Characters</a></li>
+				<li><a href="game.html">Games</a></li>
+				<ul>
+		</nav>
+	</header>
+
+	<section id="game">
+		<h2>Memory game! Click each square to match the Stranger Things characters!</h2>
+
+		<div id="picbox">
+			<span id="boxbuttons">
+				<span class="button">
+					<span id="counter">0</span>
+					Clicks
+				</span>
+				<span class="button">
+					<a onclick="ResetGame();">Reset</a>
+				</span>
+			</span>
+			<div id="boxcard"></div>
+		</div>
+	</section>
+
+	<script src="js/scripts.js"></script>
 </body>
 
 </html>
