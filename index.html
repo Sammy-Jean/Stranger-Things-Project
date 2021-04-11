@@ -9,12 +9,41 @@
   <!-- [if lt IE 9]>
 			<script src="js/html5shiv-printshiv.min.js"></script>
 		<![endif] -->
-
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/8f6a4db92f.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <title>Stranger Things</title>
 </head>
+<header>
 
-<body>
-  <script src="js/scripts"></script>
+  <nav>
+    <img class="logo" src="images/logo.png" alt="Stranger Things logo">
+    </li>
+    <ul class="w-image">
+      <li><img class="waffle1" src="images/waffle.png" alt="Waffle" /></li>
+      <li><img class="waffle2" src="images/waffle.png" alt="Waffle" /></li>
+      <li><img class="waffle3" src="images/waffle.png" alt="Waffle" /></li>
+    </ul>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="characters.html">Characters</a></li>
+      <li><a href="game.html">Games</a></li>
+      <ul>
+
+  </nav>
+</header>
+<body id="home">
+  <div id="myMusic" class=bg-music>
+  <audio src="audio/st-theme.mp3" loop="true" autoplay type="audio/mpeg"></audio>
+  <button class="btn">
+  <i class="fa fa-play-circle-o"></i>
+  <i class="fa fa-pause-circle-o"></i>
+  </button>
+
+  </div>
+
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

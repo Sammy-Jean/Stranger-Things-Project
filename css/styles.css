@@ -15,6 +15,11 @@ body {
   background: #000000;
 }
 
+#home {
+	background: url("../images/hero.jpg") center/cover no-repeat;
+	position: relative;
+	min-height: 100vh;
+}
 h2 {
 	font-family: itc-benguiat, serif;
 	font-weight: 400;
@@ -25,6 +30,7 @@ h2 {
 
 header {
   background-color: #000000;
+	display: inline;
 }
 
 header img {
@@ -32,9 +38,10 @@ header img {
 }
 
 nav {
-	display: block;
+	display: inline;
 	text-align: center;
 	max-width: 100%;
+	position: relative;
 }
 
 
@@ -66,9 +73,9 @@ nav ul li a {
 }
 
 .logo {
-	max-width: 100%;
-	height: 150px;
-	padding: 1% 0 0 5%;
+	height: 125px;
+	display: inline;
+	margin: 2%;
 }
 
 nav ul {
@@ -78,6 +85,7 @@ nav ul {
 nav ul li {
     display: inline;
     padding: 2%;
+
 }
 
 nav ul li a {
@@ -134,4 +142,46 @@ nav ul li a {
 }
 #boxbuttons .button:hover {
 	background: #999;
+}
+
+
+/* Home page  */
+
+.bg-music {
+	position: absolute;
+	    top: 8%;
+	    left: 82%;
+	    bottom: 47%;
+	    right: 2%;
+	    margin: 0 auto;
+}
+
+.btn {
+	background-color: transparent;
+	color: #fff;
+	font-size: 2.2rem;
+	border: none;
+	display: block;
+	margin: 0 auto;
+	opacity: .3;
+	transition: all linear .2s;
+}
+
+.btn:hover {
+	opacity: 1;
+
+}
+
+.fa-pause-circle {
+display: none;
+}
+
+/* Media Q */
+
+@media screen and (max-width: 500px) {
+	.w-image {
+
+display: none;
+	}
+
 }

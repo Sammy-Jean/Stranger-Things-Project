@@ -111,3 +111,22 @@ for (var y = 1; y < 3 ; y++) {
 	$(Source + " div").click(OpenCard);
 	ShuffleImages();
 });
+
+
+// music pause and play
+
+$ (document).ready(function(){
+
+  $(".btn .fa-play-circle-o").on('click',function(){
+   $(this).hide();
+   $(".fa-pause-circle-o").fadeIn();
+     $("#myMusic")[0].play();
+  });
+
+  $(".fa-pause-circle-o").on('click',function(){
+   $(this).hide();
+   $(".fa-play-circle-o").fadeIn();
+     $("#myMusic")[0].pause();
+  });
+
+});
