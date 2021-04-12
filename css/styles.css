@@ -1,95 +1,90 @@
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-*,
-	*::before,
-	*::after {
-	  box-sizing: border-box;
-	}
-}
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
-    display:block;
+  display: block;
 }
 
 body {
-	font-family: quicksand, sans-serif;
-	font-weight: 300;
-	font-style: normal;
-	color: #ffffff;
+  font-family: quicksand, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #ffffff;
   background: #000000;
 }
 
 #home {
-	background: url("../images/hero.jpg") center/cover no-repeat;
-	position: relative;
-	min-height: 100vh;
+  background: url("../images/hero.jpg") center/cover no-repeat;
+  position: relative;
+  min-height: 100vh;
 }
-
 
 #character {
-	background: url("../images/background_character.jpeg") center/cover no-repeat;
-	position: relative;
-	min-height: 100vh;
+  background: url("../images/background_character.jpeg") center/cover no-repeat;
+  position: relative;
+  min-height: 100vh;
 }
+
 h2, h1 {
-	font-family: itc-benguiat, serif;
-	font-weight: 400;
-	font-style: normal;
-	text-align: center;
-	padding: 2% 0;
-	color: white;
+  font-family: itc-benguiat, serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  padding: 2% 0;
+  color: white;
 }
 
 header {
   background-color: #000000;
-	display: inline;
+  display: inline;
 }
 
 header img {
-	height: 40px;
+  height: 40px;
 }
 
 nav {
-	display: inline;
-	text-align: center;
-	max-width: 100%;
-	position: relative;
+  display: inline;
+  text-align: center;
+  max-width: 100%;
+  position: relative;
 }
 
-
 nav ul li a {
-	font-family: itc-benguiat, serif;
-	font-weight: 700;
-	font-style: normal;
-	font-size: 1.5rem;
+  font-family: itc-benguiat, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
 }
 
 .w-image {
-	display: flex;
-	justify-content: space-between;
-	max-width: 23%;
-	margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 23%;
+  margin: 0 auto;
 }
 
 .waffle {
-	width: 40px;
-	transition: width 1s, height 1s, transform 1s;
+  width: 40px;
+  transition: width 1s, height 1s, transform 1s;
 }
+
 .waffle1, .waffle2, .waffle3 {
-	text-align: center;
-	transition: transform 1s;
+  text-align: center;
+  transition: transform 1s;
 }
 
 .waffle1:hover, .waffle2:hover, .waffle3:hover {
-	transform: rotate(720deg);
+  transform: rotate(720deg);
 }
 
 .logo {
-	height: 125px;
-	display: inline;
-	margin: 2%;
+  height: 125px;
+  display: inline;
+  margin: 2%;
 }
 
 nav ul {
@@ -97,8 +92,8 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
-    padding: 2%;
+  display: inline;
+  padding: 2%;
 }
 
 nav ul li a {
@@ -108,91 +103,76 @@ nav ul li a {
 
 /* Game container*/
 #game {
-	max-width: 100%;
-	margin: 0px auto;
-	padding: 2% 5% 10% 5%;
+  max-width: 100%;
+  margin: 0px auto;
+  padding: 2% 5% 10% 11%;
 }
 
 /* Child container of #game */
 #picbox {
-	margin: 0px auto;
-	max-width: 640px;
-	margin-bottom: 35%;
+  margin: 0px auto;
+  max-width: 640px;
+  margin-bottom: 35%;
 }
 
 /* Div for each individual box containing the cards */
 #boxcard {
-	z-index: 1;
-	margin: 10px 0 0;
+  z-index: 1;
+  margin: 10px 0 0;
 }
-#boxcard div{
-	float: left;
-	width: 100px;
-	height: 100px;
-	margin: 5px;
-	padding: 5px;
-	border: 4px solid #ba2929;
-	cursor: pointer;
-	border-radius: 10px;
-	box-shadow: 0 1px 5px rgba(0,0,0,.5);
+
+#boxcard div {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  padding: 5px;
+  border: 4px solid #ba2929;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, .5);
   background: #000000;
-	z-index: 2;
+  z-index: 2;
 }
+
 #boxcard div img {
-	display: none;
-	border-radius: 10px;
-	z-index: 3;
+  display: none;
+  border-radius: 10px;
+  z-index: 3;
 }
 
 /* Div holding click counter and Reset button for game */
 #boxbuttons {
-	text-align: center;
-	margin: 20px;
-	display: block;
-}
-#boxbuttons .button {
-	text-transform: uppercase;
-	background: #ba2929;
-	padding: 5px 10px;
-	margin: 5px;
-	border-radius: 10px;
-	cursor: pointer;
-}
-#boxbuttons .button:hover {
-	background: #999;
+  text-align: center;
+  margin: 20px;
+  display: block;
+  color: white;
+  padding-right: 14%;
 }
 
+#boxbuttons .button {
+  text-transform: uppercase;
+  background: #ba2929;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#boxbuttons .button:hover {
+  background: #999;
+}
 
 /* Home page  */
-
-.bg-music{
-	position: absolute;
-	top: 64%;
-	left: 0;
-	right: o;
-	margin: 0 auto;
+.bg-music {
+  position: absolute;
+  top: 64%;
+  left: 0;
+  right: o;
+  margin: 0 auto;
 }
-
-.btn {
-	background-color: transparent;
-	color: #fff;
-	font-size: 2.2rem;
-	border: none;
-	display: block;
-	opacity: .3;
-	transition: all linear .2s;
-margin: 0 auto;
-padding: 1%;
-}
-
-.btn:hover {
-	opacity: 1;
-
-}
-
 
 /* Character page styles  */
-
 html {
   background-color: black;
 }
@@ -212,9 +192,9 @@ main {
 }
 
 h1 {
-    font-size: 1.6rem;
-    font-weight: 400;
-    text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
 }
 
 img {
@@ -236,7 +216,6 @@ img {
   display: flex;
   padding: 1rem;
 }
-
 
 .card {
   background-color: #8E8D7B;
@@ -269,17 +248,12 @@ img {
   font-weight: 400;
 }
 
-
 /* Media Q */
-
 @media screen and (max-width: 500px) {
-	.w-image {
-
-display: none;
-	}
-
+  .w-image {
+    display: none;
+  }
 }
-
 
 @media (min-width: 40rem) {
   .cards_item {
