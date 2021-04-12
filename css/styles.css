@@ -107,37 +107,8 @@ nav ul li a {
   text-decoration: none;
 }
 
-/* Navigation animation  */
-/* Top and Bottom borders go out */
-nav.topBotomBordersOut a:before, nav.topBotomBordersOut a:after
-{
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: #FFF;
-    content: "";
-    opacity: 0;
-    transition: all 0.3s;
-}
 
-nav.topBotomBordersOut a:before
-{
-    top: 0px;
-    transform: translateY(10px);
-}
 
-nav.topBotomBordersOut a:after
-{
-    bottom: 0px;
-    transform: translateY(-10px);
-}
-
-nav.topBotomBordersOut a:hover:before, nav.topBotomBordersOut a:hover:after
-{
-    opacity: 1;
-    transform: translateY(0px);
-}
 
 
 #game {
@@ -218,8 +189,9 @@ padding: 1%;
 	opacity: 1;
 
 }
+
+
 /* Character page styles  */
-/* Design */
 
 html {
   background-color: #ecf9ff;
@@ -251,7 +223,7 @@ img {
   vertical-align: middle;
 }
 
-
+/* Cards Styling  */
 .cards {
   display: flex;
   flex-wrap: wrap;
