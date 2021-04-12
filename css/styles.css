@@ -107,22 +107,21 @@ nav ul li a {
   text-decoration: none;
 }
 
-
-
-
-
+/* Game container*/
 #game {
 	max-width: 100%;
 	margin: 0px auto;
 	padding: 2% 5% 10% 5%;
 }
 
+/* Child container of #game */
 #picbox {
 	margin: 0px auto;
 	max-width: 640px;
 	margin-bottom: 35%;
 }
 
+/* Div for each individual box containing the cards */
 #boxcard {
 	z-index: 1;
 	margin: 10px 0 0;
@@ -145,6 +144,8 @@ nav ul li a {
 	border-radius: 10px;
 	z-index: 3;
 }
+
+/* Div holding click counter and Reset button for game */
 #boxbuttons {
 	text-align: center;
 	margin: 20px;
