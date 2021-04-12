@@ -3,7 +3,7 @@
 	padding: 0;
 }
 
-*,*,
+*,
 	*::before,
 	*::after {
 	  box-sizing: border-box;
@@ -194,7 +194,7 @@ padding: 1%;
 /* Character page styles  */
 
 html {
-  background-color: #ecf9ff;
+  background-color: black;
 }
 
 body {
